@@ -92,3 +92,29 @@ echo "\nI\'m in.";
 
 Want to learn more about escape sequences? Check out the docs if you want to take a deeper dive: http://php.net/manual/en/language.types.string.php#language.types.string.syntax.double
 
+Do you want some more practice? If so, go ahead and open up a new PHP sandbox:
+
+Let's make an exercise accomplishment list. It is the opposite of a todo list. Instead of listing all the things you need todo you will instead list all the things that you did!
+
+1.
+Let’s make an exercise accomplishment list for you. Use `echo` to print a string to the console in the following format: 1. [thing you have done]. For example, here’s ours: 1. Run 5 miles.
+
+2.
+Let’s create a new echo statement for the next item on our exercise accomplishment list.
+
+By default, this second statement would print on the same line as the first… Start this second string with the escape sequence for a new line character. Next, continue the string in the same format as before: 2. [Another exercise accomplishment].
+
+3.
+Let’s throw a third thing on the list. This time, let’s mix it up. Include something inside your string wrapped in double quotes. For example, here’s ours 3. Running a half marathon was a "blast".
+
+How'd it go? Here is what a possible solution might look like:
+```
+<?php
+echo "I did 50 burpees on Monday."
+echo "\nI ran 5 miles on Tuesday."
+echo "\nI ran a half marathon on Saturday. It was a \"blast\"";
+
+
+
+
+
