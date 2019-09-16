@@ -23,6 +23,8 @@ In attempting to create a variable for our very long word we might choose:
 
 The act of `assignment` is the process of associating a variable name with a specific value so that whenever the name is referenced the computer will be able to use the value assigned to it. 
 
+We will need to use the assignment operator, `=`, to assign a value to the variable.
+
 `$longest_word = supercalifragilisticexpialidocious;`
 
 That's it! We have declared the variable `$longest_word` and assigned it a value of `"supercalifragilisticexpialidocious"`. Now, let's rewrite our earlier examples with our new variable.
