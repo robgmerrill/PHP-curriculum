@@ -1,27 +1,31 @@
 # Variables
 Variables are a way of referencing a value by name. 
 
-Remember the string `"supercalifragilisticexpialidocious"`? Imagine that we wanted to use this with string concatenation a few times. 
+We experience this all the time in normal day to day life. If I was in a room of strangers at the doctors office and a nurse said, "Rob Merrill." I know that she is referring to me and not anyone else in that room.
 
-`"The longest word I can think of is " . "supercalifragilisticexpialidocious" . "."`
+Or, if I look at a plastic bag and it says "Doritos" on the outside then I know that the bag is filled with delicous chips :) 
+
+Remember the string `"supercalifragilisticexpialidocious"`? Imagine that we wanted to use this with string concatenation a few times. Feel free to open the following Repl: 
+
+`echo "The longest word I can think of is " . "supercalifragilisticexpialidocious" . ".";`
 
 
-`"My least favorite word to type is " . "supercalifragilisticexpialidocious" . "."`
+`echo "\nMy least favorite word to type is " . "supercalifragilisticexpialidocious" . ".";`
 
-`"The most famous word in the movie Mary Poppins is " . "supercalifragilisticexpialidocious" . "."`
+`echo "\nThe most famous word in the movie Mary Poppins is " . "supercalifragilisticexpialidocious" . ".";`
 
-That is a lot of typing the same characters over and over again? This is where variables come to the rescue!
+That is a long word and a lot of typing the same characters over and over again? This is where variables come to the rescue!
 
 Variables store values so we can reuse them easily through our program.
 
-Let's look at a couple vocabulary terms we need to learn: `declare` and `assign`.
+Let's look at a couple vocabulary terms we need to learn: "declare" and "assign".
 
-The act of `declaring` a variable is reserving the word, the variable name, which we can refer to in our code. Variable names should be human readable. There should be some hint as to what value the varialbe holds. 
+The act of "declaring" a variable is reserving the word, the variable name, which we can refer to in our code. Variable names should be human readable. If possible, there should be some hint as to what value the varialbe holds. 
 
 In attempting to create a variable for our very long word we might choose: 
 `$longest_word`
 
-The act of `assignment` is the process of associating a variable name with a specific value so that whenever the name is referenced the computer will be able to use the value assigned to it. 
+The act of "assignment" is the process of associating a variable name with a specific value so that whenever the name is referenced the computer will be able to use the value assigned to it. 
 
 We will need to use the assignment operator, `=`, to assign a value to the variable.
 
@@ -32,9 +36,9 @@ That's it! We have declared the variable `$longest_word` and assigned it a value
 `"The longest word I can think of is " . $longest_word . "."`
 
 
-`"My least favorite word to type is " . $longest_word . "."`
+`"\nMy least favorite word to type is " . $longest_word . "."`
 
-`"The most famous word in the movie Mary Poppins is " . $longest_word . "."`
+`"\nThe most famous word in the movie Mary Poppins is " . $longest_word . "."`
 
 This makes a huge difference! It's a time saver and will become absolutely necessary in the future as we build out programs with PHP. 
 

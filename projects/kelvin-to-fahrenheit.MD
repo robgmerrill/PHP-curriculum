@@ -10,27 +10,50 @@ Because this is our first mini-challenge you also may just want to watch me solv
 
 Challenge: Convert any given temperature in Kelvin to Fahrenheit
 
-1. Let's imagine that the weather reports says that the temperature today will be  301 Kelvin. How should you dress for the day? Let's create an app that lets us know the temperature in fahrenheit. To start, create a variable named kelvinTemp, and set it equal to 301. Write a comment above that explains this line of code.
+1. Let's imagine that the weather reports says that the temperature today will be  301 Kelvin. How should you dress for the day? Let's create an app that lets us know the temperature in fahrenheit. To start, create a variable named `$kelvin_temp`, and set it equal to `301`. Write a comment above that explains this line of code.
 
 2. Finding the temperature in Celsius is similar to Kelvin — the only difference is that Celsius is 273.15 degrees less than Kelvin.
 
-Let's convert Kelvin to Celsius by subtracting 273.15 from the kelvinTemp variable. Store the result in another variable, named celsiusTemp.
+Let's convert Kelvin to Celsius by subtracting `273.15` from the `$kelvin_temp` variable. Store the result in another variable, named `$celsius_temp`.
 
 Write a comment above that explains this line of code.
 
-3. Use this equation to calculate Fahrenheit, then store the answer in a variable named fahrenheitTemp.
+3. Use this equation to calculate Fahrenheit, then store the answer in a variable named `$fahrenheit_temp`.
 
-Fahrenheit = Celsius * (9/5) + 32
+<b><i>Fahrenheit = Celsius * (9/5) + 32</i></b>
 
 In the next step we will round the number saved to fahrenheitTemp. Write a comment above that explains this line of code.
 
-4. Log to the console the value of  fahrenheitTemp. In our next step we are going to see what we can do to make sure that our number is a whole number by rounding down. The value you logged to the console should begin with 82.13
+4. Log to the console the value of  `$fahrenheit_temp`. In our next step we are going to see what we can do to make sure that our number is a whole number by rounding down. `echo`  the value to the terminal. It should begin with `82.13`.
 
-5. As we have just seen, when you convert from Celsius to Fahrenheit, you often get a decimal number. Go ahead and delete the console log code from step 4.
+5. As we have just seen, when you convert from Celsius to Fahrenheit, you often get a decimal number. Go ahead and delete the `echo` code from step 4.
 
-Use the .floor() method from the Math library to round down the Fahrenheit temperature. Save the result to the fahrenheitTemp variable. Check out the documentation for Math.floor() here: http://bit.ly/javascript-math-floor. Because this is a new concept we haven't covered yet, you may want to watch the next video if you get stuck at this point. This will round your decimal down no matter what the value. Other methods from the Math library you might try out are .round() and ceil(). Write a comment above that explains this line of code.
+Use the `floor()` method to round down the Fahrenheit temperature. Save the result to the `$fahrenheit_temp` variable.  Write a comment above that explains this line of code.
 
-6. Use console.log and string concatenation to log the temperature in fahrenheitTemp to the console to create the message as follows: The temperature is TEMPERATURE degrees Fahrenheit. TEMPERATURE should be determined by the value of fahrenheitTemp.
+6. Use `echo` and string concatenation to display the temperature in `$fahrenheit_temp` to the terminal to create the message as follows:
+```
+The temperature is TEMPERATURE degrees Fahrenheit.
+```
+ TEMPERATURE should be determined by the value of `$fahrenheit_temp`.
 
 Great job! I'll walk through these steps in the next video!
 
+Finished Code:
+```
+<?php
+// Temperature in kelvin stored in variable `$kelvin_temp`
+$kelvin_temp = 301;
+
+// temperature in celsius stored in variable `$celsius_temp`
+$celsius_temp = $kelvin_temp - 273.15;
+
+// convert celsius to fahrenheit stored in variable `$fahrenheit_temp`
+$fahrenheit_temp = $celsius_temp * (9/5) + 32;
+
+// round the value of fahrenheit down and assign to `$fahrenheit_temp`
+$fahrenheit_temp = floor($fahrenheit_temp);
+
+// use string concatenation to leave a message
+// "The temperature is `fahrenheit` degrees Fahrenheit."
+echo 'The temperature is ' . $fahrenheit_temp . ' degrees Fahrenheit.';
+```

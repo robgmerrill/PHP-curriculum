@@ -1,23 +1,23 @@
 # Variable Naming Rules and Best Practices
 
-In the last lesson I mentioned that we `declare` variables and we `assign` values to them. 
+In the last lesson we covered declaring variables and assigning values to them. 
 
-Declare: 
+Example of declaring a variable: 
 `$name;`
 
-Assign: 
+Example of assigning a value: 
 `$name = "Rob Merrill";`
 
-But did you know that you can do both these steps at once? 
+Example of declaring and assigning at same time: 
 `$weather_today = "rainy";`
 
 In the above example we declared a variable and assigned a value in one step!
 
 Let's talk about variables naming rules:
 
-* All variables in PHP start with a  `$` sign. This character allows our computer to quickly see that we are declaring a variable with our code.
+* All variables in PHP must start with a  `$` sign. This character allows our computer to quickly see that we are declaring a variable with our code.
 
-* A variable names must start with a letter or the underscore character `_`. 
+* A variable name must start with a letter or the underscore character `_`. 
 
 * A variable name cannot start with a number.
 
@@ -29,7 +29,11 @@ Let's talk about variables naming rules:
 
 
 ## Ready for some practice?
-Open up the following link and fix the following invalid PHP variables. Currently, if you try to `echo` the value of any of these variables you will get an error:
+Open up the following link and fix the following invalid PHP variables. 
+
+Uncomment out each line of code and fix one line at a time.
+
+Currently, if you try to `echo` the value of any of these variables you will get an error:
 
 ```
 <?php
@@ -39,7 +43,7 @@ $1answer = "The answer is blue.";
 
 $favorite drink = "coffee";
 
-$city&state = "Lodi, CA";
+$city&state = "Seattle, WA";
 
 ```
 
@@ -59,9 +63,9 @@ $one_answer = "The answer is blue.";
 # variables cannot contain spaces
 $favorite_drink = "coffee";
 
-# $city&state = "Lodi, CA";
+# $city&state = "Seatte, WA";
 # variable name can only contain alpha-numeric characters and underscores
-$city_and_state = "Lodi, CA"; 
+$city_and_state = "Seattle, WA"; 
 ```
 
 

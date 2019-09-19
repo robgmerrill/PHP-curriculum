@@ -1,25 +1,29 @@
 # String Concatenation
 String concatenation is when we add strings together. If you are new to programming that might sound a little strange but it is very necessary so it is an important skill to learn!
 
-Along with learning the term `concatenation` we also are going to user another new term, `operator`. `Operator` is a character that performs some sort of task in our code. The `.` is the `concatenation opeartor`. 
+Along with learning the term "concatenation" we also are going to look at another term, `operator`. `Operator` is a character that performs some sort of task in our code. We have seen this already with the assignment operator `=` in previous lessons when assigning a string such as `"Hello PHP` to a variable `$message`.
+
+ The `.` is the "concatenation operator". 
 
 This will take a string on the left and combine it with the string on the right.
 
-Go ahead and open up a new PHP coding sandbox:
+Go ahead and open up a new Repl:
 ```
 <?php
 echo "One string" . "Two string.";
 ```
 
-Notice the output is: `One String.TwoString.` PHP isn't going to try to read our minds and assume that we want a space between our two sentences. We have to add the spaces ourself. 
+Notice the output is: `One String.TwoString.` 
 
-At the end of the first string:
+PHP isn't going to try to read our minds and assume that we want a space between our two sentences. We have to add that space ourself. 
+
+We can do that at the end of the first string:
 ```
 <?php
 echo "One string " . "Two string.";
 ```
 
-At the beginning of the second string:
+Or, at the beginning of the second string:
 ```
 <?php
 echo "One string" . " Two string.";
@@ -28,6 +32,7 @@ echo "One string" . " Two string.";
 The results of either approach will be what we were hoping for: `One string. Two string.`
 
 There is also another way. We could add a string that contains an empty space:
+
 ```
 <?php
 echo "One string" . " " . "Two string.";
@@ -44,5 +49,5 @@ Image result for supercalifragilisticexpialidocious gif
 Code Solution
 ```
 <?php
-echo "su" . "per" . "ca" . "li" .  "fra" . "gil" . "is" . "tic" . "ex" . "pi" . "a" . "li" , "do" . "cious";
+echo "su" . "per" . "ca" . "li" .  "fra" . "gil" . "is" . "tic" . "ex" . "pi" . "a" . "li" . "do" . "cious";
 ```
